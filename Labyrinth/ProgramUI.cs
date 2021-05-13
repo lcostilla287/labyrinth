@@ -59,7 +59,7 @@ namespace Labyrinth
         private void Entrance()
         {
             Console.Clear();
-            //doorsound
+            
             Console.WriteLine("You are at the main entrance of the Labyrinth\n" +
                 "What would you like to do?\n" +
                 "1. Check the red door\n" +
@@ -99,6 +99,9 @@ namespace Labyrinth
                 Console.WriteLine("You use the red key and it unlocks the door!\n" +
                     "You go through and enter the labyrinth.");
                 //Doorsound
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\door_open.wav");
+                player.Play();
+
                 Console.ReadKey();
                 RoomOne();
             }
@@ -298,7 +301,10 @@ namespace Labyrinth
                 Console.WriteLine("You use the key to unlock the Blue door.");
                 Console.ReadKey();
                 //Doorsound
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\door_open.wav");
+                player.Play();
                 Console.WriteLine("The Blue door opens and you set your friend free!");
+
                 Console.ReadKey();
                 Console.WriteLine("He joins you to search for your other friend");
                 Console.ReadKey();
@@ -388,7 +394,10 @@ namespace Labyrinth
                 Console.WriteLine("You use the Yellow Key to unlock the Yellow door.");
                 Console.ReadKey();
                 //doorsound
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\door_open.wav");
+                player.Play();
                 Console.WriteLine("You set your last friend free!");
+
                 Console.ReadKey();
                 Console.WriteLine("Congratulations! You have found your last friend and retrace your steps to the exit.");
                 Console.ReadKey();
