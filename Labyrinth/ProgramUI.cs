@@ -387,13 +387,15 @@ namespace Labyrinth
         {
             Console.Clear();
             Console.WriteLine("You traverse through the flooded hallway.");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\zapsplat_nature_water_deep_movement_surface_002_31724.wav");
+            player.Play();
             Keys keyCheck = _repo.GetKeyByColor("Yellow");
             Console.ReadKey();
             if (keyCheck != null)
             {
                 Console.WriteLine("You use the Yellow Key to unlock the Yellow door.");
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\door_open.wav");
-                player.Play();
+                System.Media.SoundPlayer play = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\door_open.wav");
+                play.Play();
                 Console.ReadKey();
                 //doorsound
                 
@@ -412,6 +414,7 @@ namespace Labyrinth
                 Console.WriteLine("You find a Yellow door and it's locked.");
                 Console.ReadKey();
                 Console.WriteLine("You wade through the flooded hallway back to the previous room");
+                player.Play();
                 Console.ReadKey();
                 RoomSix();
             }
@@ -467,6 +470,8 @@ namespace Labyrinth
             {
                 Console.Clear();
                 Console.WriteLine("The rope snaps!");
+                System.Media.SoundPlayer play = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\zapsplat_foley_seed_pod_snap_break_flamboyant_tree_001_12034.wav");
+                play.Play();
                 Console.ReadKey();
                 Console.Clear();
                 _repo.DeleteExistingKey("Red");
