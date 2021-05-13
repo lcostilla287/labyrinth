@@ -392,14 +392,18 @@ namespace Labyrinth
             if (keyCheck != null)
             {
                 Console.WriteLine("You use the Yellow Key to unlock the Yellow door.");
-                Console.ReadKey();
-                //doorsound
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\door_open.wav");
                 player.Play();
+                Console.ReadKey();
+                //doorsound
+                
                 Console.WriteLine("You set your last friend free!");
 
                 Console.ReadKey();
                 Console.WriteLine("Congratulations! You have found your last friend and retrace your steps to the exit.");
+                _repo.DeleteExistingKey("Red");
+                _repo.DeleteExistingKey("Yellow");
+                _repo.DeleteExistingKey("Blue");
                 Console.ReadKey();
                 
             }
@@ -422,6 +426,9 @@ namespace Labyrinth
             Console.WriteLine("As you are crawling through the partially collapsed hallway, it completely collapses!");
             Console.ReadKey();
             Console.Clear();
+            _repo.DeleteExistingKey("Red");
+            _repo.DeleteExistingKey("Yellow");
+            _repo.DeleteExistingKey("Blue");
             Console.WriteLine("GAME OVER");
             Console.ReadKey();
         }
@@ -462,6 +469,9 @@ namespace Labyrinth
                 Console.WriteLine("The rope snaps!");
                 Console.ReadKey();
                 Console.Clear();
+                _repo.DeleteExistingKey("Red");
+                _repo.DeleteExistingKey("Yellow");
+                _repo.DeleteExistingKey("Blue");
                 Console.WriteLine("GAME OVER");
                 Console.ReadKey();
             }       

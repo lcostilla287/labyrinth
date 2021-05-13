@@ -38,5 +38,12 @@ namespace Labyrinth
             }
             return null;
         }
+
+        //Delete key method
+        public void DeleteExistingKey (string keyColor)
+        {
+            Keys keyToDelete = GetKeyByColor(keyColor);
+            _keyDirectory.Remove(keyToDelete);
+        }
     }
 }
