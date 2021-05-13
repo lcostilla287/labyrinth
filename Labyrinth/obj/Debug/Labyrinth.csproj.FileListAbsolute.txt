@@ -1,0 +1,7 @@
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\obj\Debug\Labyrinth.csprojAssemblyReference.cache
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\obj\Debug\Labyrinth.csproj.CoreCompileInputs.cache
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\bin\Debug\Labyrinth.exe.config
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\bin\Debug\Labyrinth.exe
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\bin\Debug\Labyrinth.pdb
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\obj\Debug\Labyrinth.exe
+C:\Users\luis1\Desktop\ElevenFiftyProjects\Labyrinth\Labyrinth\obj\Debug\Labyrinth.pdb
